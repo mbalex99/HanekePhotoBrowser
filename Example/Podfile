@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'HanekePhotoBrowser_Example' do
+  pod 'HanekePhotoBrowser', :path => '../'
+
+  target 'HanekePhotoBrowser_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
