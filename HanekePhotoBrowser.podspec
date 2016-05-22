@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'HanekePhotoBrowser'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of HanekePhotoBrowser.'
+  s.summary          = 'Swift Photo browser that uses HanekeSwift as a cache layer.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,25 +18,21 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+A port(ish/sorta/kinda) of IDMPhotoBrowser for Swift which uses HanekeSwift as a cache for images.
                        DESC
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/HanekePhotoBrowser'
+  s.homepage         = 'https://github.com/mbalex99/HanekePhotoBrowser'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Maximilian Alexander' => 'max@zinkpulse.com' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/HanekePhotoBrowser.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'Maximilian Alexander' => 'mbalex99@gmail.com' }
+  s.source           = { :git => 'https://github.com/mbalex99/HanekePhotoBrowser.git', :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/maxofeden'
 
   s.ios.deployment_target = '8.0'
-
   s.source_files = 'HanekePhotoBrowser/Classes/**/*'
-  
   # s.resource_bundles = {
   #   'HanekePhotoBrowser' => ['HanekePhotoBrowser/Assets/*.png']
   # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = 'UIKit', 'MessageUI'
+  s.dependency 'HanekeSwift', '~> 0.10.1'
 end

@@ -1,0 +1,19 @@
+PODS:
+  - HanekePhotoBrowser (0.1.0):
+    - HanekeSwift (~> 0.10.1)
+  - HanekeSwift (0.10.1)
+
+DEPENDENCIES:
+  - HanekePhotoBrowser (from `../`)
+
+EXTERNAL SOURCES:
+  HanekePhotoBrowser:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HanekePhotoBrowser: 10b26bffea96d99d0a3cf7e0b7f76281ac53f5a3
+  HanekeSwift: 08e47d3d0f2899ec58e5d257beba0de619aca9e8
+
+PODFILE CHECKSUM: 0f0798df29e0a3aa48664c77b9baaf518efdd138
+
+COCOAPODS: 1.0.0
